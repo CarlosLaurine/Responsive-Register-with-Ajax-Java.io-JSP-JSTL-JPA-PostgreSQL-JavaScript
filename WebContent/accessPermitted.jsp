@@ -18,7 +18,8 @@
 
 
 					<h1 class="header">Welcome to our Register!</h1>
-					<a href="saveUser?fstDisplay=listUsers" class='ghost-round2 signup' style="width:5.5em; text-indent: 0.75em">Sign Up!</a>
+					<a href="saveUser?fstDisplay=listUsers" class='ghost-round2 signup'
+						style="width: 5.5em; text-indent: 0.75em">Sign Up!</a>
 
 
 				</div>

@@ -29,14 +29,14 @@ public class userDao {
 			ps.setString(2, user.getPassword());
 			ps.setString(3, user.getRealName());
 			ps.setString(4, user.getPhone());
-			
+
 			ps.setString(5, user.getZip());
 			ps.setString(6, user.getStreet());
 			ps.setString(7, user.getNeighborhood());
 			ps.setString(8, user.getCity());
 			ps.setString(9, user.getState());
 			ps.setString(10, user.getIbgeCode());
-			
+
 			ps.execute();
 			con.commit();
 
@@ -173,7 +173,7 @@ public class userDao {
 			pst.setString(2, user.getPassword());
 			pst.setString(3, user.getRealName());
 			pst.setString(4, user.getPhone());
-			
+
 			pst.setString(5, user.getZip());
 			pst.setString(6, user.getStreet());
 			pst.setString(7, user.getNeighborhood());
@@ -205,9 +205,12 @@ public class userDao {
 
 	public boolean validateUpdatedUser(String userName, String id) {
 		// Using SQL Command "count()" to return an int value in case there are already
-		// a user row with the specified username (to this, an alias (in this case "quantity"
-		//is) defined to receive and manipulate this int value through .getInt("alias") method
-		String query = "SELECT COUNT(1) AS quantity FROM public.\"userLogin\" WHERE username = '" + userName + "' and id <> " + id;
+		// a user row with the specified username (to this, an alias (in this case
+		// "quantity"
+		// is) defined to receive and manipulate this int value through .getInt("alias")
+		// method
+		String query = "SELECT COUNT(1) AS quantity FROM public.\"userLogin\" WHERE username = '" + userName
+				+ "' and id <> " + id;
 		try {
 
 			PreparedStatement pst = con.prepareStatement(query);
@@ -215,7 +218,7 @@ public class userDao {
 			ResultSet rs = pst.executeQuery();
 
 			if (rs.next()) {
-				//using alias to call out the SQL count() value
+				// using alias to call out the SQL count() value
 				return rs.getInt("quantity") <= 0; // Return TRUE
 			}
 
@@ -233,11 +236,13 @@ public class userDao {
 
 		return false;
 	}
-	
+
 	public boolean validateUser(String userName) {
 		// Using SQL Command "count()" to return an int value in case there are already
-		// a user row with the specified username (to this, an alias (in this case "quantity"
-		//is) defined to receive and manipulate this int value through .getInt("alias") method
+		// a user row with the specified username (to this, an alias (in this case
+		// "quantity"
+		// is) defined to receive and manipulate this int value through .getInt("alias")
+		// method
 		String query = "SELECT COUNT(1) AS quantity FROM public.\"userLogin\" WHERE username = '" + userName + "'";
 		try {
 
@@ -246,7 +251,7 @@ public class userDao {
 			ResultSet rs = pst.executeQuery();
 
 			if (rs.next()) {
-				//using alias to call out the SQL count() value
+				// using alias to call out the SQL count() value
 				return rs.getInt("quantity") <= 0; // Return TRUE
 			}
 

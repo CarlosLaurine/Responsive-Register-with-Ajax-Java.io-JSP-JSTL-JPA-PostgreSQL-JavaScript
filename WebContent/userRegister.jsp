@@ -100,18 +100,19 @@
 
 					<tr>
 						<center>
-						<td>
-								<input type="submit" value="Submit"
-									class="header table-header" style="float:right; margin-right: 2em; margin-top: 2.5em;" >
+							<td><input type="submit" value="Submit"
+								class="header table-header"
+								style="float: right; margin-right: 2em; margin-top: 2.5em;">
 							</td>
 
 
 
-						<td>
-							<!-- Using JavaScript Feature "onclick" to use DOM Concept to change the Form Action and Parameters submitted to the User Servlet -->
-							<input type="submit" value="Reset" class="header table-header" style="margin-left: 1.5em; margin-top: 2.5em;" 
-							onclick="document.getElementById('registerForm').action='saveUser?reset=reset'">
-						</td>
+							<td>
+								<!-- Using JavaScript Feature "onclick" to use DOM Concept to change the Form Action and Parameters submitted to the User Servlet -->
+								<input type="submit" value="Reset" class="header table-header"
+								style="margin-left: 1.5em; margin-top: 2.5em;"
+								onclick="document.getElementById('registerForm').action='saveUser?reset=reset'">
+							</td>
 						</center>
 
 
@@ -126,7 +127,8 @@
 	</form>
 
 	<center>
-		<h1 class="header table-header" style="margin-bottom: 3em;">Registered Users</h1>
+		<h1 class="header table-header" style="margin-bottom: 3em;">Registered
+			Users</h1>
 	</center>
 
 	<div class="container2">

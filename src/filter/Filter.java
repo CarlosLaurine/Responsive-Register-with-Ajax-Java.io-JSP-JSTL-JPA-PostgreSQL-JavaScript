@@ -20,7 +20,7 @@ import exceptions.DBException;
   (Requisitions/Responses) Patterns that will be intercepted by 
   Filter (in this case,  all of them. Syntax -> /* )*/
 
-@WebFilter(urlPatterns = {"/*"})
+@WebFilter(urlPatterns = { "/*" })
 public class Filter implements javax.servlet.Filter {
 
 	// Creating static Connection object in order to allow Filter to receive the
@@ -36,26 +36,30 @@ public class Filter implements javax.servlet.Filter {
 	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
 			throws IOException, ServletException {
 
-		/* Using FilterChain object arg2 to call method doFilter() passing the Request
-		   and Response objects as parameters to be interpreted by the Filter Chain*/
+		/*
+		 * Using FilterChain object arg2 to call method doFilter() passing the Request
+		 * and Response objects as parameters to be interpreted by the Filter Chain
+		 */
 		try {
 
 			arg2.doFilter(arg0, arg1);
 
-			/* In case everything went right past through doFilter, then the Connection will
-			   initiate */
-			
+			/*
+			 * In case everything went right past through doFilter, then the Connection will
+			 * initiate
+			 */
+
 			con.commit();
 
 		} catch (Exception e) {
-			
+
 			try {
 				e.printStackTrace();
 				con.rollback();
 			} catch (SQLException e1) {
 				throw new DBException("Connection could not be rolled back! Cause: " + e.getMessage());
 			}
-			
+
 		}
 
 	}

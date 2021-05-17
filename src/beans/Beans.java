@@ -3,24 +3,23 @@ package beans;
 //JavaBeans Class to process temporary data during Runtime
 
 public class Beans {
-	
-	private long id; 
+
+	private long id;
 	private String name;
 	private String password;
 	private String realName;
 	private String phone;
-	
+
 	private String zip;
 	private String street;
 	private String neighborhood;
 	private String city;
 	private String state;
 	private String ibgeCode;
-	
-	
-	//Don't need a constructor since it will be used sometimes only to call one of its methods (as in Servlet's doPut())
-	
-	
+
+	// Don't need a constructor since it will be used sometimes only to call one of
+	// its methods (as in Servlet's doPut())
+
 	public String getName() {
 		return name;
 	}
@@ -36,7 +35,7 @@ public class Beans {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	public long getId() {
 		return id;
 	}
@@ -48,12 +47,15 @@ public class Beans {
 	public String getRealName() {
 		return realName;
 	}
+
 	public void setRealName(String realName) {
 		this.realName = realName;
 	}
+
 	public String getPhone() {
 		return phone;
 	}
+
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
@@ -105,7 +107,5 @@ public class Beans {
 	public void setIbgeCode(String ibgeCode) {
 		this.ibgeCode = ibgeCode;
 	}
-	
-	
 
 }

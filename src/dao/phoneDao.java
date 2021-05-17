@@ -47,9 +47,8 @@ public class phoneDao {
 
 	// Since list phones will perform just a simple selection method, it is a good
 	// possible alternative to just throw the Exception
-	
-	
-	//Using a Long user to list only certain Phones related to a chosen User 
+
+	// Using a Long user to list only certain Phones related to a chosen User
 	public List<Phone> listPhone(Long user) {
 
 		List<Phone> phones = new ArrayList<>();

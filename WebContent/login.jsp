@@ -16,24 +16,30 @@
 			<div class='overlay'></div>
 			<div class='content'>
 				<div class='input-fields'>
-				<img alt="User Icon" src="Resources/Imgs/user-icon.png" class="icon">
-				
-				<% if(request.getAttribute("denied") != null){ %>
-					
-					<h1 class="header"><%=request.getAttribute("denied") %></h1>
-					
-					
-				<%} else{%>
-					
+					<img alt="User Icon" src="Resources/Imgs/user-icon.png"
+						class="icon">
+
+					<%
+					if (request.getAttribute("denied") != null) {
+					%>
+
+					<h1 class="header"><%=request.getAttribute("denied")%></h1>
+
+
+					<%
+					} else {
+					%>
+
 					<h1 class="header">Login</h1>
-					
-				 <%}%>
+
+					<%
+					}
+					%>
 
 					<form action="login" method="post">
 
 						<input type="text" id="name" name="name" placeholder='Username'
-							class='input-line full-width'> 
-						<input type="password"
+							class='input-line full-width'> <input type="password"
 							id="password" name="password" placeholder='Password'
 							class='input-line full-width bottom'>
 						<div>

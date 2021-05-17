@@ -102,7 +102,7 @@ public class User extends HttpServlet {
 
 				e.printStackTrace();
 			}
-			
+
 			String msg = null;
 			boolean validation = true;
 

@@ -22,14 +22,20 @@
 
 	<div class="splash-container">
 		<div class="splash">
-			<h1 class="splash-head" style="margin-top: -2em;">Complete Web
-				Registration (CRUD) with Ajax Webservices and JSP</h1>
+			<h1 class="splash-head" style="margin-top: -2.8em;">Complete Web
+				Registration (CRUD) with JSP/PostgreSQL DataBase and Ajax
+				Webservices</h1>
 			<p class="splash-subhead">As you scroll this Page down, some
 				further Information on this Project's Development will appear</p>
 			<p>
 				<a href="login.jsp"
 					class="pure-button pure-button-primary homeButton"
-					style="text-decoration: none"> Go to the Project </a>
+					style="text-decoration: none; border: 2px dotted black"> Go to
+					the Project </a>
+			</p>
+			<p class="splash-subhead" style="text-transform: none;'">
+				OBS: For Login Filter Verification purposes, The First-Access Login
+				Account is => <br /> User: adm | Password: adm
 			</p>
 			<br />
 		</div>
@@ -75,24 +81,17 @@
 						as: Image/PDF Base64 Conversion, File Upload/Download and Database
 						Storage/Query</p>
 				</div>
-				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-					<h3 class="content-subhead">
-						<i class="fa fa-th-large"></i> Java.IO API Package
-					</h3>
-					<p>Its Applications were explored in a Variety of Features such
-						as: Image/PDF Base64 Conversion, File Upload/Download and Database
-						Storage/Query</p>
-				</div>
 
 				<p>
-					<a href="login.jsp"
-						class="pure-button pure-button-primary homeButton"
-						style="text-decoration: none; text-align: center; background-color: black; color: white"> Go to the Project's GitHub
-						Repository </a>
+					<a
+						href="https://github.com/CarlosLaurine/Responsive-Register-with-Ajax-Java.io-JSP-JSTL-JPA-PostgreSQL-JavaScript"
+						class="pure-button pure-button-primary homeButton " target="_blank"
+						style="text-decoration: none; text-align: center; background-color: black; color: white;">
+						Go to the Project's GitHub Repository </a>
 				</p>
-				
-				<br/><br/>
-				
+
+				<br /> <br />
+
 			</div>
 		</div>
 

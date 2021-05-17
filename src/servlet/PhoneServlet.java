@@ -66,11 +66,12 @@ public class PhoneServlet extends HttpServlet {
 
 		String path = request.getServletPath();
 
+		System.out.println();
+		
 		// Catching Selected User Attribute (set at doGet) from Session Scope
 		Beans ub1 = (Beans) request.getSession().getAttribute("selectedUser");
 		String number = request.getParameter("number");
 		String type = request.getParameter("type");
-
 
 		phone.setNumber(number);
 		phone.setType(type);
