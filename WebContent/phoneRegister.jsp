@@ -7,6 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>Phone Register</title>
 <link href="Resources/CSS/register.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Resources/Imgs/phone-icon.png">	
 
 </head>
 <body>

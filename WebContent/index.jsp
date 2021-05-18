@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description"
 	content="A layout example that shows off a responsive product landing page.">
+<link rel="icon" href="Resources/Imgs/phone-icon.png">	
 <title>Responsive JSP/Ajax/JPA Table Project (Home)</title>
 <link rel="stylesheet" href="Resources/CSS/homePageStyle.css">
 <link rel="stylesheet" href="/css/pure/pure-min.css">
@@ -22,7 +23,7 @@
 
 	<div class="splash-container">
 		<div class="splash">
-			<h1 class="splash-head" style="margin-top: -2.8em;">Complete Web
+			<h1 class="splash-head" style="margin-top: -3.3em;">Complete Web
 				Registration (CRUD) with JSP/PostgreSQL DataBase and Ajax
 				Webservices</h1>
 			<p class="splash-subhead">As you scroll this Page down, some

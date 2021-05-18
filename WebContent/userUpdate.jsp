@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>User Update</title>
+<link rel="icon" href="Resources/Imgs/phone-icon.png">	
 </head>
 <body>
 

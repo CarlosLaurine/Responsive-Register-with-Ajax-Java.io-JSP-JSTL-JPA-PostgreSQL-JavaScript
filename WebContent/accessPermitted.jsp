@@ -6,6 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Access Permitted!</title>
 <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Resources/Imgs/phone-icon.png">	
 </head>
 <body>
 

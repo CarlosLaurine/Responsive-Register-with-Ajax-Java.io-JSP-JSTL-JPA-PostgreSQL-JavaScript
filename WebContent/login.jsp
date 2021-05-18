@@ -7,6 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>Login</title>
 <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Resources/Imgs/phone-icon.png">	
 </head>
 <body>
 
